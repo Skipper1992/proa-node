@@ -1,0 +1,20 @@
+{
+  "name": "generator-proa",
+  "version": "1.0.0",
+  "description": "generator hapi code",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "lab -c -L -I makeString"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@skipper:Skipper1992/proa-node.git"
+  },
+  "keywords": [
+    "generator",
+    "fastly",
+    "code"
+  ],
+  "author": "skipper",
+  "license": "BSD-3-Clause"
+}
