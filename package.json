@@ -2,9 +2,10 @@
   "name": "generator-proa",
   "version": "1.0.0",
   "description": "generator hapi code",
-  "main": "app/index.js",
+  "main": "new/index.js",
   "scripts": {
-    "test": "lab -c -L -I makeString"
+    "test": "lab -c -L -I makeString",
+    "test-cover": "lab -c  -I makeString -r html -o ./test/artifacts/coverage.html && open ./test/artifacts/coverage.html"
   },
   "repository": {
     "type": "git",
@@ -13,8 +14,31 @@
   "keywords": [
     "generator",
     "fastly",
-    "code"
+    "code",
+    "hapi"
   ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "author": "skipper",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Skipper1992/proa-node/issues"
+  },
+  "homepage": "https://github.com/Skipper1992/proa-node",
+  "devDependencies": {
+    "code": "3.x.x",
+    "lab": "11.x.x",
+    "proxyquire": "1.x.x",
+    "rimraf": "2.x.x",
+    "yeoman-assert": "2.x.x",
+    "yeoman-test": "1.x.x",
+    "yo": "1.x.x"
+  },
+  "dependencies": {
+    "git-config": "0.0.7",
+    "github-url-from-git": "1.x.x",
+    "mkdirp": "0.5.x",
+    "yeoman-generator": "0.24.x"
+  }
 }
